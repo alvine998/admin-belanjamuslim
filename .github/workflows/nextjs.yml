@@ -91,3 +91,10 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with: 
+          server: ftp.belanjamuslim.id
+          username: ${{secrets.USERNAME}}
+          password: ${{secrets.PASSWORD}}
+          server-dir: /
