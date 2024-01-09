@@ -92,7 +92,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
       - name: Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        uses: SamKirkland/FTP-Deploy-Action@4.3.4
         with: 
           server: ftp.belanjamuslim.id
           username: ${{secrets.USERNAME}}
